@@ -1,0 +1,19 @@
+{
+  "name": "yazlab-web-servis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarikkizilcik/yazlab-web-servis.git"
+  },
+  "author": "tarikkizilcik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tarikkizilcik/yazlab-web-servis/issues"
+  },
+  "homepage": "https://github.com/tarikkizilcik/yazlab-web-servis#readme"
+}
