@@ -5,8 +5,7 @@ const NewsSchema = new Schema({
   author: { type: String, required: true },
   title: { type: String, required: true },
   body: { type: String, required: true },
-  created_at: { type: Date, required: true },
-  updated_at: Date
-})
+  type: { type: String, required: true }
+}, { timestamps: true })
 
 mongoose.model('News', NewsSchema)
