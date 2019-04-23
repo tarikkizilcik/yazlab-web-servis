@@ -4,7 +4,6 @@ const News = mongoose.model('News')
 
 router.post('/add', function (req, res) {
   const news = req.body.news
-  news.created_at = Date.now()
   const newsModel = new News(news)
   console.log(news)
 

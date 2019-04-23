@@ -3,7 +3,7 @@ var app = express()
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 
-app.use(bodyParser.json())
+app.use(bodyParser.json({ limit: '50mb' }))
 
 mongoose.connect('mongodb://localhost:27017/news', { useNewUrlParser: true })
 
