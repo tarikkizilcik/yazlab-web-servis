@@ -24,4 +24,10 @@ router.get('/', (req, res) => {
     .catch(reason => res.status(500).send(reason))
 })
 
+router.delete('/', (req, res) => {
+  News.deleteMany({})
+    .then(value => res.send(value))
+    .catch(reason => res.status(500).send(reason))
+})
+
 module.exports = router

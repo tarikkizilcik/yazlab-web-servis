@@ -7,6 +7,7 @@ const NewsSchema = new Schema({
   body: { type: String, required: true },
   type: { type: String, required: true, lowercase: true },
   image: { type: Array, required: true },
+  publicationDate: { type: Number, required: true },
   createdAt: { type: Number, default: Date.now },
   updatedAt: { type: Number, default: Date.now }
 })
