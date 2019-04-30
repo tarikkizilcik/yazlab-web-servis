@@ -12,6 +12,16 @@ router.post('/add', function (req, res) {
   })
 })
 
+router.post('/check', function (req, res) {
+  const time = req.body.time
+
+  News.find({ createdAt: { $gt: time } }, function (error, result) {
+    if (!error && result.length) {
+      res.send({ 'news': result })
+    }
+  })
+})
+
 router.get('/:id', function (req, res) {
   const id = req.params.id
 
